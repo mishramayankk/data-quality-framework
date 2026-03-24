@@ -51,8 +51,8 @@ The system performs automated checks (e.g., row counts), retries failed operatio
 ```
 data-quality-framework/
 │── config/
-│   ├── config.json        # Credentials & connections
-│   ├── rules.json         # Validation rules
+│   ├── config.json        
+│   ├── rules.json         
 │
 │── src/
 │   ├── snowflake_client.py
@@ -62,7 +62,7 @@ data-quality-framework/
 │   ├── retry.py
 │
 │── jobs/
-│   ├── run_pipeline.py    # Main execution script
+│   ├── run_pipeline.py    
 │
 │── requirements.txt
 │── README.md
@@ -216,24 +216,8 @@ Just update config:
 * Monitoring ingestion pipelines
 * Detecting data drift or loss
 
----
 
-## Resume Impact
 
-* Demonstrates **end-to-end data engineering ownership**
-* Highlights **data quality, reliability, and monitoring**
-* Shows **real-world system design + automation**
-
----
-
-## Future Enhancements
-
-* Column-level validation
-* Schema drift detection
-* Z-score anomaly detection
-* Web dashboard for reports
-
----
 
 ## Author
 
