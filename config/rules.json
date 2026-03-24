@@ -1,0 +1,16 @@
+{
+  "tables": [
+    {
+      "name": "patients",
+      "snowflake_query": "SELECT COUNT(*) AS count FROM patients",
+      "es_index": "patients_index",
+      "checks": ["count_match"]
+    },
+    {
+      "name": "claims",
+      "snowflake_query": "SELECT COUNT(*) AS count FROM claims",
+      "es_index": "claims_index",
+      "checks": ["count_match"]
+    }
+  ]
+}
